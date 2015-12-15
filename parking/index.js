@@ -6,7 +6,13 @@ var ParkingLot = function () {
 		spotsOpen: null,
 		spotsTotal: null,
 		beginEnforcement: null,
-		endEnforcement: null
+		endEnforcement: null,
+		//voting data starts
+		votesFull: null,
+		votesMostlyFull: null,
+		votesMostlyEmpty: null,
+		votesEmpty: null
+		//voting data ends
 	};
 
 	this.fill = function (info) {
@@ -28,6 +34,23 @@ var ParkingLot = function () {
 	this.getInformation = function () {
 		return this.data;
 	};
+	//Starting voting functions
+	this.triggerVotesFull = function() {
+		this.data.votesFull++;
+	};
+	this.triggerVotesMostlyFull = function() {
+		this.data.votesMostlyFull++;
+	};
+	this.triggerVotesMostlyEmpty = function() {
+		this.data.votesMostlyEmpty++;
+	};
+	this.triggerVotesEmpty = function() {
+		this.data.votesEmpty++;
+	};
+	/*
+	this.triggerVotesWin = function() {
+		if(this.data.votesFull == this.data.votesFull)
+	}*/
 };
 
 module.exports = function (info) {

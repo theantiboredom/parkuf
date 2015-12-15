@@ -73,7 +73,104 @@ module.exports = function (parking) {
 			res.json({status: 'done'});
 		}
 	};
+	//Begin Voting functions
+	functions.votesfull = function (req, res) {
+		var number = req.param('number');
 
+		if (typeof parking[number] === 'undefined') {
+			res.status(404).json({status: 'error'});
+		} else {
+			parking[number].triggerVotesFull();
+
+			var record = new ParkingSchema(
+				parking[number].getInformation()
+			);
+
+			record.save(function(err) {
+				if (err) {
+					console.log(err);
+					res.status(500).json({status: 'failure'});
+				} else {
+					res.json({status: 'success'});
+				}
+			});
+
+			res.json({status: 'done'});
+		}
+	};
+	functions.votesmostlyfull = function (req, res) {
+		var number = req.param('number');
+
+		if (typeof parking[number] === 'undefined') {
+			res.status(404).json({status: 'error'});
+		} else {
+			parking[number].triggerVotesMostlyFull();
+
+			var record = new ParkingSchema(
+				parking[number].getInformation()
+			);
+
+			record.save(function(err) {
+				if (err) {
+					console.log(err);
+					res.status(500).json({status: 'failure'});
+				} else {
+					res.json({status: 'success'});
+				}
+			});
+
+			res.json({status: 'done'});
+		}
+	};
+	functions.votesmostlyempty = function (req, res) {
+		var number = req.param('number');
+
+		if (typeof parking[number] === 'undefined') {
+			res.status(404).json({status: 'error'});
+		} else {
+			parking[number].triggerVotesMostlyEmpty();
+
+			var record = new ParkingSchema(
+				parking[number].getInformation()
+			);
+
+			record.save(function(err) {
+				if (err) {
+					console.log(err);
+					res.status(500).json({status: 'failure'});
+				} else {
+					res.json({status: 'success'});
+				}
+			});
+
+			res.json({status: 'done'});
+		}
+	};
+	functions.votesempty = function (req, res) {
+		var number = req.param('number');
+
+		if (typeof parking[number] === 'undefined') {
+			res.status(404).json({status: 'error'});
+		} else {
+			parking[number].triggerVotesEmpty();
+
+			var record = new ParkingSchema(
+				parking[number].getInformation()
+			);
+
+			record.save(function(err) {
+				if (err) {
+					console.log(err);
+					res.status(500).json({status: 'failure'});
+				} else {
+					res.json({status: 'success'});
+				}
+			});
+
+			res.json({status: 'done'});
+		}
+	};
+	//end voting
 	// functions.list = function (req, res) {
 	// 	res.render('list', {
 	// 		title: 'All Parking', 

@@ -7,5 +7,9 @@ module.exports = mongoose.model('Flight', {
 	departs: String,
 	arrives: String,
 	actualDepart: Number,
-	actualArrive: Number
+	actualArrive: Number,
+	votesFull: Number,
+	votesMostlyFull: Number,
+	votesMostlyEmpty: Number,
+	votesEmpty: Number
 });

@@ -6,7 +6,11 @@ module.exports = {
 		"spotsOpen": 27,
 		"spotsTotal": 210,
 		"beginEnforcement": "7:30AM",
-		"endEnforcement": "3:30PM"
+		"endEnforcement": "3:30PM",
+		"votesFull": 5,
+		"votesMostlyFull": 4,
+		"votesMostlyEmpty": 3,
+		"votesEmpty": 2
 	},
 	"32": {
 		"number": 32,
@@ -15,7 +19,11 @@ module.exports = {
 		"spotsOpen": 12,
 		"spotsTotal": 271,
 		"beginEnforcement": "7:30AM",
-		"endEnforcement": "3:30PM"
+		"endEnforcement": "3:30PM",
+		"votesFull": 5,
+		"votesMostlyFull": 4,
+		"votesMostlyEmpty": 3,
+		"votesEmpty": 2
 	},
 	"33": {
 		"number": 33,
@@ -24,7 +32,11 @@ module.exports = {
 		"spotsOpen": 27,
 		"spotsTotal": 780,
 		"beginEnforcement": "7:30AM",
-		"endEnforcement": "3:30PM"
+		"endEnforcement": "3:30PM",
+		"votesFull": 5,
+		"votesMostlyFull": 4,
+		"votesMostlyEmpty": 3,
+		"votesEmpty": 2
 	},
 	"34": {
 		"number": 34,
@@ -33,7 +45,11 @@ module.exports = {
 		"spotsOpen": 100,
 		"spotsTotal": 250,
 		"beginEnforcement": "Open All Times",
-		"endEnforcement": "Open All Times"
+		"endEnforcement": "Open All Times",
+		"votesFull": 5,
+		"votesMostlyFull": 4,
+		"votesMostlyEmpty": 3,
+		"votesEmpty": 2
 	},
 	"35": {
 		"number": 35,
@@ -42,7 +58,11 @@ module.exports = {
 		"spotsOpen": 10,
 		"spotsTotal": 502,
 		"beginEnforcement": "7:30AM",
-		"endEnforcement": "3:30PM"
+		"endEnforcement": "3:30PM",
+		"votesFull": 5,
+		"votesMostlyFull": 4,
+		"votesMostlyEmpty": 3,
+		"votesEmpty": 2
 	},
 	"36": {
 		"number": 36,
@@ -51,7 +71,11 @@ module.exports = {
 		"spotsOpen": 22,
 		"spotsTotal": 120,
 		"beginEnforcement": "7:30AM",
-		"endEnforcement": "3:30PM"
+		"endEnforcement": "3:30PM",
+		"votesFull": 5,
+		"votesMostlyFull": 4,
+		"votesMostlyEmpty": 3,
+		"votesEmpty": 2
 	},
 	"37": {
 		"number": 37,
@@ -60,7 +84,11 @@ module.exports = {
 		"spotsOpen": 17,
 		"spotsTotal": 50,
 		"beginEnforcement": "7:30AM",
-		"endEnforcement": "3:30PM"
+		"endEnforcement": "3:30PM",
+		"votesFull": 5,
+		"votesMostlyFull": 4,
+		"votesMostlyEmpty": 3,
+		"votesEmpty": 2
 	},
 	"38": {
 		"number": 38,
@@ -69,6 +97,10 @@ module.exports = {
 		"spotsOpen": 11,
 		"spotsTotal": 150,
 		"beginEnforcement": "7:30AM",
-		"endEnforcement": "3:30PM"
+		"endEnforcement": "3:30PM",
+		"votesFull": 5,
+		"votesMostlyFull": 4,
+		"votesMostlyEmpty": 3,
+		"votesEmpty": 2
 	}
 };

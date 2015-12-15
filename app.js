@@ -32,6 +32,10 @@ module.exports = function (parking) {
 	app.get('/parking/:number', routes.parking);
 	app.put('/parking/:number/entry', routes.entry);
 	app.put('/parking/:number/exit', routes.exit);
+	app.put('/parking/:number/votesfull', routes.votesfull);
+	app.put('/parking/:number/votesmostlyfull', routes.votesmostlyfull);
+	app.put('/parking/:number/votesmostlyempty', routes.votesmostlyempty);
+	app.put('/parking/:number/votesempty', routes.votesempty);
 	//app.get('/list', routes.list);
 	app.get('/json', routes.listjson);
 
